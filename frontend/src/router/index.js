@@ -8,8 +8,16 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+      meta: {
+        title: 'VLineups | Home',
+      },
     }
   ],
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || 'VLineups'
+  next()
 })
 
 export default router
