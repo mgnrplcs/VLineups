@@ -1,7 +1,7 @@
 [project]
-name = "backend"
+name = "VLineups"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI backend for VLineups - a web application for managing and discovering Valorant agent lineups"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -15,5 +15,6 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
     "ruff>=0.15.20",
 ]
